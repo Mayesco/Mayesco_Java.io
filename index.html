@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Swing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header>
+
+    <nav>
+      <ul>
+        <li> <a href="index.html"> Inicio </a></li>
+        <li> <a href="joptionPane.html"> Información JoptionPane</a> </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <br>
+
+  <div class="fondito">
+    <section>
+      <img src="img/fondo.jpg" alt="Wallpeper de Java">
+      <h1>Libreria Java Swing</h1>
+      <h2>¿Qué es Swing?</h2>
+      <article>
+        <p>Java Swing es una herramienta de interfaz gráfica de usuario (GUI) ligera que incluye un amplio conjunto de
+          widgets.
+          Incluye paquete que le permite crear componentes de GUI para sus aplicaciones Java, y es independiente de la
+          plataforma.</p>
+
+
+        <p>La biblioteca Swing está construida sobre el conjunto de herramientas de widgets abstractos de Java ( AWT ),
+          un
+          kit de
+          herramientas GUI más antiguo que depende de la plataforma. Puede utilizar los componentes de la GUI de Java
+          como
+          el
+          botón, el cuadro de texto, etc. de la biblioteca y no tiene que crear los componentes desde cero.</p>
+      </article>
+    </section>
+
+
+    <section>
+      <h2>Ejemplos ShowInputDialog</h2>
+      <article>
+        <p>En esta entrada vamos a ver el método showInputDialog. Este método muestra una ventana de diálogo para que el
+          usuario
+          introduzca datos en un cuadro de texto o seleccione en un combo.</p>
+
+        <p>El método está sobrecargado con uno, dos, tres, cuatro y siete parámetros. Este último lo utilizaremos si
+          queremos tener
+          un icono personalizado y combo con distintas opciones que le pasamos con un array de objetos, y la opción
+          seleccionada
+          por defecto.</p>
+
+
+        <pre>
+            <code>
+              <strong>
+  OptionPane.showConfirmDialog(Component parentComponent,
+             Object message,
+             String title,
+             int messageType,
+             Icon icon,
+             Object[] selectionValues,
+             Object initialSelectionValue)
+              </strong>
+            </code>
+          </pre>
+
+        <p>Vamos a ver distintos ejemplos del método:</p>
+
+        <div class="ejemplos">
+          <p>Como único parámetro el mensaje a mostrar</p>
+          <img src="img/1_Parametro.png" alt="Método con un parámetro">
+
+          <br>
+
+          <img src="img/one-para.png" alt="Código en Netbeans">
+
+
+          <p>Con 2 parámetros tenemos dos posibilidades; el componente padre y el mensaje a mostrar, o bien el mensaje y
+            un valor por
+            defecto.</p>
+
+          <img src="img/2_Parametro.png" alt="Método con 2 parámetro">
+
+          <br>
+
+          <img src="img/2-Code.png" alt="Código en Netbeans">
+
+          <br>
+
+          <img src="img/2_1_Parametro.png" alt="Método con  2 parámetro">
+
+          <br>
+
+          <img src="img/2-1-Code.png" alt="Código en Netbeans">
+
+          <br>
+
+          <p>Con 3 parámetros que serían el componente padre, el mensaje y un valor inicial.</p>
+
+          <img src="img/3_Parametros.png" alt="Método con 3 parámetro">
+
+          <br>
+
+          <img src="img/3-Parametros-Code.png" alt=" Código en Netbeans">
+
+
+          <p>Con 4 parámetros; el componente padre, el mensaje, título del cuadro de diálogo y el tipo de mensaje para
+            que
+            nos
+            muestre el icono correspondiente <a href="https://natividadcv.github.io/javaxwings.github.io/"
+              target="_black">(Ver
+              showMessageDialog).</a> </p>
+
+          <img src="img/4_Parametros.png" alt="Método con 4 parámetro">
+
+          <br>
+
+          <img src="img/7-Parametros-Code.png" alt=" Código en Netbeans">
+
+          <p> Y la última sobrecarga con el método antes mencionado de 7 parámetros. </p>
+
+          <img src="img/7_Parametros.png" alt="Método con 4 parámetro">
+
+          <br>
+
+          <img src="img/7-Parametros-Code.png" alt=" Código en Netbeans">
+
+          <p> A excepción de este <strong>último método que recibe un Object, todos los demás reciben un valor
+              String</strong>. Tanto en
+            uno como en
+            los otros, si vamos a recibir datos numéricos, deberemos realizar la conversión para poder operar con ellos.
+          </p>
+
+          <p>En el último de los ejemplos, recogemos el Object y mostramos por pantalla la opción recogida con el método
+            showMessageDialog (método al que le podemos pasar un object como parámetro).</p>
+
+          <img src="img/Opcion.png" alt=Opciones">
+
+          <br>
+
+          <img src="img/Opcion-Code.png" alt=" Código en Netbeans">
+
+          <h2>Código Completo</h2>
+          <img src="img/Code-Full.png" alt="Código completo">
+
+        </div>
+
+
+
+
+
+      </article>
+    </section>
+
+  </div>
+
+
+
+</body>
+
+</html>
